@@ -1,0 +1,50 @@
+@import "../reset";
+@import "../variable";
+
+.highscoreTable {
+    box-shadow: -2px -2px 6px 2px $white,
+    2px 2px 6px 2px $gray-2;
+    padding: 20px;
+    border-radius: 11px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+    thead {
+        font-size: $small-title;
+        text-align: left;
+        background-color: $pink-1;
+        color: $white;
+        th {
+            padding: 12px 8px;
+            &:first-child {
+                border-top-left-radius: 11px;
+            }
+            &:last-child {
+                border-top-right-radius: 11px;
+            }
+        }
+    }
+    tbody {
+        background-color: $gray-4;
+        tr:last-child {
+            td {
+                &:first-child {
+                    border-bottom-left-radius: 11px;
+                }
+                &:last-child {
+                    border-bottom-right-radius: 11px;
+                }
+            }
+        }
+        tr:nth-child(even){
+            background-color: $gray-5;
+        }
+        td {
+            font-size: $extra-small-title;
+            padding: 8px;
+        }
+        tr:hover {
+            background-color: $gray-3;
+        }
+    }
+}

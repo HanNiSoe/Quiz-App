@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hign Scores</title>
+    <link rel="stylesheet" href="stylesheet/app.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="toggle">
+        <input type="checkbox" id="switch" /><label for="switch"></label>
+    </div>
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+          <h1 class="main-heading" id="finalScore">High Scores</h1>
+          <span class="congrat-text"></span>
+          <table class="highscoreTable">
+            <thead>
+              <tr>
+                <th class="text-center">No</th>
+                <th>Name</th>
+                <th class="text-center">Score</th>
+              </tr>
+            </thead>
+            <tbody id="highScoresList">
+            </tbody>
+          </table>
+          <a class="btn" href="/">Go Home</a>
+        </div>
+      </div>
+    <script src="pack/highscore.js"></script>
+    <script src="pack/utilities/toggle.js"></script>
+</body>
+</html>

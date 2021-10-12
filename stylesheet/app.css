@@ -1,0 +1,638 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.dark-mode {
+  background-color: #141516; }
+  .dark-mode .btn,
+  .dark-mode .choice-container,
+  .dark-mode .btn:hover,
+  .dark-mode .choice-container:hover,
+  .dark-mode .btn[disabled],
+  .dark-mode .btn[disabled]:hover {
+    box-shadow: inset -4px -4px 10px 4px #fff, inset 4px 4px 10px 4px #c4c4c4; }
+  .dark-mode .btn:active,
+  .dark-mode .choice-container:active {
+    box-shadow: inset -6px -6px 15px 6px #fff, inset 6px 6px 15px 6px #c4c4c4; }
+  .dark-mode .normal-title {
+    color: #fff; }
+  .dark-mode #hud #hud-item {
+    box-shadow: inset -4px -4px 10px 4px #fff, inset 4px 4px 10px 4px #c4c4c4; }
+    .dark-mode #hud #hud-item #progressBar {
+      background-color: #eee;
+      box-shadow: inset -1px -1px 4px 1px #fff, inset 1px 1px 4px 1px #c4c4c4; }
+    .dark-mode #hud #hud-item #progressBarFull {
+      border: 3px solid #ddd; }
+  .dark-mode .toggle label {
+    box-shadow: none; }
+  .dark-mode .highscoreTable {
+    box-shadow: inset -4px -4px 10px 4px #fff, inset 4px 4px 10px 4px #c4c4c4; }
+  .dark-mode .congrat-text {
+    color: #fff; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 10px; }
+
+.main-heading {
+  font-size: 54px;
+  color: #EB789C;
+  text-align: center;
+  text-shadow: 2px 2px 2px #fff;
+  margin-bottom: 50px;
+  letter-spacing: 8px; }
+
+.normal-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-weight: 600; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px; }
+
+.container > * {
+  width: 100%; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.flex-center {
+  justify-content: center;
+  align-items: center; }
+
+.justify-center {
+  justify-content: center; }
+
+.text-center {
+  text-align: center; }
+
+.word-break {
+  word-break: break-word; }
+
+.hidden {
+  display: none; }
+
+.custom-margin {
+  margin: 0px 20px 20px 20px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.btn {
+  padding: 13px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #EB789C;
+  text-shadow: 1px 1px 1px #fff;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 11px;
+  margin-bottom: 25px;
+  width: 200px;
+  height: 50px;
+  box-shadow: -2px -2px 6px 2px #fff, 2px 2px 6px 2px #c4c4c4;
+  border: none !important; }
+  .btn:hover {
+    cursor: pointer;
+    transform: translate(1px, 2px);
+    box-shadow: 1px 1px 6px 2px #fff, 1px 1px 6px 2px #c4c4c4; }
+  .btn:active {
+    transform: translate(0px, 5px);
+    box-shadow: inset -4px -4px 10px 4px #fff, inset 4px 4px 10px 4px #c4c4c4; }
+
+.btn[disabled] {
+  cursor: not-allowed;
+  color: #c4c4c4;
+  box-shadow: -2px -2px 6px 2px #fff, 2px 2px 6px 2px #c4c4c4; }
+  .btn[disabled]:hover, .btn[disabled]:focus {
+    transform: translate(1px, 2px);
+    box-shadow: 1px 1px 6px 2px #fff, 1px 1px 6px 2px #c4c4c4; }
+
+.toggle {
+  position: absolute;
+  top: 5%;
+  right: 4%; }
+  .toggle input[type=checkbox] {
+    float: right;
+    height: 0;
+    width: 0;
+    visibility: hidden; }
+  .toggle label {
+    cursor: pointer;
+    width: 55px;
+    height: 30px;
+    background: #c4c4c4;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    box-shadow: -2px -2px 6px 2px #fff, 2px 2px 6px 2px #c4c4c4; }
+  .toggle label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 100px;
+    transition: 0.3s; }
+  .toggle input:checked + label {
+    background: #EB789C; }
+  .toggle input:checked + label:after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%); }
+  .toggle label:active:after {
+    width: 75px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.choice-container {
+  display: flex;
+  justify-content: start;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 11px;
+  margin-bottom: 18px;
+  width: 100%;
+  height: 50px;
+  box-shadow: -2px -2px 6px 2px #fff, 2px 2px 6px 2px #c4c4c4;
+  border: none !important; }
+  .choice-container:hover {
+    cursor: pointer;
+    transform: translate(1px, 2px);
+    box-shadow: 1px 1px 6px 2px #fff, 1px 1px 6px 2px #c4c4c4; }
+  .choice-container:active {
+    transform: translate(0px, 5px);
+    box-shadow: inset -4px -4px 10px 4px #fff, inset 4px 4px 10px 4px #c4c4c4; }
+  .choice-container .choice-prefix {
+    border-radius: 11px 0 0 11px;
+    padding: 15px 25px;
+    background-color: #EB789C;
+    color: #fff; }
+  .choice-container .choice-text {
+    padding: 15px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif; }
+  .choice-container.correct {
+    outline: 2px solid #25d34e;
+    color: #25d34e; }
+    .choice-container.correct .choice-prefix {
+      color: #25d34e; }
+  .choice-container.incorrect {
+    outline: 2px solid #eb2135;
+    color: #eb2135; }
+    .choice-container.incorrect .choice-prefix {
+      color: #eb2135; }
+
+#hud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  #hud #hud-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    box-shadow: -2px -2px 6px 2px #fff, 2px 2px 6px 2px #c4c4c4;
+    padding: 20px;
+    border-radius: 11px;
+    background-color: #eee;
+    margin-bottom: 40px; }
+    #hud #hud-item .hud-prefix {
+      text-align: center;
+      font-size: 20px;
+      color: #EB789C; }
+    #hud #hud-item .hud-main-text {
+      text-align: center;
+      font-size: 30px; }
+    #hud #hud-item #progressBar {
+      width: 200px;
+      height: 20px;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: -2px -2px 6px 2px #fff, 2px 2px 6px 2px #c4c4c4; }
+    #hud #hud-item #progressBarFull {
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      background-color: #EB789C;
+      border-radius: 10px;
+      border: 3px solid #eee;
+      box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.highscoreTable {
+  box-shadow: -2px -2px 6px 2px #fff, 2px 2px 6px 2px #c4c4c4;
+  padding: 20px;
+  border-radius: 11px;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 40px; }
+  .highscoreTable thead {
+    font-size: 24px;
+    text-align: left;
+    background-color: #EB789C;
+    color: #fff; }
+    .highscoreTable thead th {
+      padding: 12px 8px; }
+      .highscoreTable thead th:first-child {
+        border-top-left-radius: 11px; }
+      .highscoreTable thead th:last-child {
+        border-top-right-radius: 11px; }
+  .highscoreTable tbody {
+    background-color: #eee; }
+    .highscoreTable tbody tr:last-child td:first-child {
+      border-bottom-left-radius: 11px; }
+    .highscoreTable tbody tr:last-child td:last-child {
+      border-bottom-right-radius: 11px; }
+    .highscoreTable tbody tr:nth-child(even) {
+      background-color: #f2f2f2; }
+    .highscoreTable tbody td {
+      font-size: 20px;
+      padding: 8px; }
+    .highscoreTable tbody tr:hover {
+      background-color: #ddd; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  form input {
+    border: none;
+    outline: none;
+    background-color: #eee;
+    padding: 16px;
+    border-radius: 11px;
+    max-width: 320px;
+    margin-bottom: 30px;
+    box-shadow: inset -4px -4px 10px 4px #fff, inset 4px 4px 10px 4px #c4c4c4;
+    color: #333;
+    transition: 0.2s ease-out;
+    font-size: 18px; }
+  form input::placeholder {
+    color: #c4c4c4; }
+  form input:focus {
+    box-shadow: inset -1px -1px 3px 1px #fff, inset 1px 1px 3px 1px #c4c4c4; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* LOADER */
+#loader {
+  border: 16px solid #fff;
+  border-radius: 50%;
+  border-top: 16px solid #EB789C;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+:root {
+  background-color: #eee; }
+
+@font-face {
+  font-family: 'ShapeOfThings';
+  src: url("../font/The Shape Of Things.otf"); }
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  font-family: 'ShapeOfThings', sans-serif; }
+
+/*# sourceMappingURL=app.css.map */

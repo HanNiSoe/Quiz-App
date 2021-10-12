@@ -1,0 +1,78 @@
+@import "../reset";
+@import "../variable";
+@import "../mixin";
+
+.btn {
+    padding: 13px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: $pink-1;
+    text-shadow: 1px 1px 1px $white;
+    font-family: inherit;
+    @include neomorphic-btn(25px, 200px);
+}
+
+.btn[disabled] {
+    cursor: not-allowed;
+    color: $gray-2;
+    box-shadow: -2px -2px 6px 2px $white,
+        2px 2px 6px 2px $gray-2;
+    &:hover,
+    &:focus {
+        transform: translate(1px,2px);
+        box-shadow: 1px 1px 6px 2px $white,
+            1px 1px 6px 2px $gray-2;
+    } 
+} 
+
+.toggle {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    input[type=checkbox] {
+        float: right;
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    
+    label {
+        cursor: pointer;
+        width: 55px;
+        height: 30px;
+        background: $gray-2;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+        box-shadow: -2px -2px 6px 2px $white,
+        2px 2px 6px 2px $gray-2;
+    }
+    
+    label:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+        background: $white;
+        border-radius: 100px;
+        transition: 0.3s;
+    }
+    
+    input:checked + label {
+        background: $pink-1;
+    }
+    
+    input:checked + label:after {
+        left: calc(100% - 3px);
+        transform: translateX(-100%);
+    }
+    
+    label:active:after {
+        width: 75px;
+    }
+}

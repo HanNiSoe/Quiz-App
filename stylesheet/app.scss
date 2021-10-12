@@ -1,0 +1,27 @@
+@import "./reset";
+@import "./themes/dark_mode.scss";
+@import "./common";
+@import "./variable";
+@import "./utilities/button.scss";
+@import "./layout/game.scss";
+@import "./layout/highscore.scss";
+@import "./utilities/form.scss";
+@import "./utilities/loader.scss";
+
+:root {
+  background-color: $gray-4;
+}
+
+@font-face {
+  font-family: 'ShapeOfThings';
+  src: url('../font/The\ Shape\ Of\ Things.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'ShapeOfThings', sans-serif;
+}

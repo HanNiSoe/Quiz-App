@@ -1,0 +1,30 @@
+@import "../reset";
+@import "../variable";
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+        border: none;
+        outline: none;
+        background-color: $gray-4;
+        padding: 16px;
+        border-radius: 11px;
+        max-width: 320px;
+        margin-bottom: 30px;
+        box-shadow: inset -4px -4px 10px 4px $white,
+            inset 4px 4px 10px 4px $gray-2;
+        color: $gray-1;
+        transition: 0.2s ease-out;
+        font-size: $large-text;
+    }
+    input::placeholder {
+        color: $gray-2;
+    }
+    input:focus {
+        box-shadow: inset -1px -1px 3px 1px $white,
+            inset 1px 1px 3px 1px $gray-2;
+    }
+}

@@ -1,0 +1,49 @@
+@import "../reset.scss";
+@import "../variable.scss";
+
+.dark-mode {
+    background-color: $black-1;
+    .btn,
+    .choice-container,
+    .btn:hover,
+    .choice-container:hover,
+    .btn[disabled],
+    .btn[disabled]:hover  {
+        box-shadow: inset -4px -4px 10px 4px $white, 
+        inset 4px 4px 10px 4px $gray-2;
+    }
+    .btn:active,
+    .choice-container:active {
+        box-shadow: inset -6px -6px 15px 6px $white, 
+            inset 6px 6px 15px 6px $gray-2;
+    }
+    .normal-title {
+        color: $white;
+    }
+    #hud {
+        #hud-item {
+            box-shadow: inset -4px -4px 10px 4px $white, 
+                inset 4px 4px 10px 4px $gray-2;
+            #progressBar {
+                background-color: $gray-4;
+                box-shadow: inset -1px -1px 4px 1px $white, 
+                inset 1px 1px 4px 1px $gray-2;
+            }
+            #progressBarFull {
+                border: 3px solid $gray-3;
+            }
+        }
+    }
+    .toggle {
+        label {
+            box-shadow: none;
+        }
+    }
+    .highscoreTable {
+        box-shadow: inset -4px -4px 10px 4px $white, 
+            inset 4px 4px 10px 4px $gray-2;
+    }
+    .congrat-text {
+        color: $white;
+    }
+}

@@ -1,0 +1,22 @@
+@mixin neomorphic-btn($mB, $width) {
+    font-size: $large-text;
+    background-color: $gray-4;
+    border-radius: 11px;
+    margin-bottom: $mB;
+    width: $width;
+    height: 50px;
+    box-shadow: -2px -2px 6px 2px $white,
+    2px 2px 6px 2px $gray-2;
+    border: none !important;
+    &:hover {
+        cursor: pointer;
+        transform: translate(1px,2px);
+        box-shadow: 1px 1px 6px 2px $white,
+        1px 1px 6px 2px $gray-2;
+    }
+    &:active {
+        transform: translate(0px,5px);
+        box-shadow: inset -4px -4px 10px 4px $white, 
+        inset 4px 4px 10px 4px $gray-2;
+    }
+}
