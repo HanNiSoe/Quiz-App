@@ -10,6 +10,9 @@ const game = document.querySelector('#game');
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
 
+let count = 10;
+let choiceClicked = false;
+
 let crtQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -73,17 +76,36 @@ getNewQuestion = () => {
         const num = choice.dataset['number'];
         choice.lastElementChild.textContent = crtQuestion['choice' + num];
     });
-
+    
     // remove finished question
     setQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
+
+    // countdown timer
+    var countdownTimer = setInterval(() => {
+        document.querySelector('#count').innerHTML = count;
+        count--;
+        if (choiceClicked) {
+            choiceClicked = false;
+            clearInterval(countdownTimer);
+            count = 10;
+        }
+        if (count < 0) {
+            clearInterval(countdownTimer);
+            count = 10;
+            getNewQuestion();
+        }
+    }, 1000);
 };
 
-choices.forEach((choice) => {
+choices.forEach(choice => {
     choice.addEventListener('click', (e) => {
+        
         if (!acceptingAnswers) return;
-
+        
         acceptingAnswers = false;
+        choiceClicked = true;
+
         const selectedChoice = e.target.parentElement;
         const selectedAnswer = selectedChoice.dataset['number'];
         const classToApply = selectedAnswer == crtQuestion.answer ? "correct" : "incorrect";
