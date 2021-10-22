@@ -12,3 +12,8 @@ or
 ```bash
   git clone https://gitlab.com/hannisoe/Quiz-App.git
 ```
+
+## Preview
+
+![Preview](images/capture1.png)
+![Preview](images/capture2.png)
