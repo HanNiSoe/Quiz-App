@@ -58,7 +58,7 @@ getNewQuestion = () => {
     // set final score in local storage and redirect to end page
     if (setQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-        return location.assign('/end.html');
+        return location.assign('end.html');
     }
     questionCounter++;
 

@@ -23,8 +23,8 @@ saveHighScore = (e) => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     if(highScores.includes(score)) {
         localStorage.setItem('mostRecentUser',username.value);
-        location.assign('/highscore.html')
+        location.assign('highscore.html')
     } else {
-        location.assign('/');
+        location.assign('index.html');
     } 
 };
